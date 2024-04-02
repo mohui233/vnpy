@@ -1,9 +1,8 @@
-from vnpy_ctastrategy import CtaStrategyApp
-
 from vnpy.event import EventEngine
 from vnpy.trader.engine import MainEngine
 from vnpy.trader.ui import MainWindow, create_qapp
-from vnpy.vnpy_okx import OkxGateway
+
+from vnpy.vnpy_okex import OkexGateway
 
 
 def main():
@@ -12,8 +11,7 @@ def main():
 
     event_engine = EventEngine()
     main_engine = MainEngine(event_engine)
-    main_engine.add_gateway(OkxGateway)
-    main_engine.add_app(CtaStrategyApp)
+    main_engine.add_gateway(OkexGateway)
 
     main_window = MainWindow(main_engine, event_engine)
     main_window.showMaximized()

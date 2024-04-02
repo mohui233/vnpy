@@ -1,6 +1,6 @@
 # The MIT License (MIT)
 #
-# Copyright (c) 2023-present, VeighNa Global
+# Copyright (c) 2015-present, vn-crypto
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -20,7 +20,9 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-from .okx_gateway import OkxGateway
+import importlib_metadata
+
+from .okex_gateway import OkexGateway
 
 
-__version__ = "2024.3.29"
+__version__ = importlib_metadata.version("vnpy_okex")
