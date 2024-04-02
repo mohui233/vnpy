@@ -83,7 +83,7 @@ class Exchange(Enum):
     Exchange.
     """
     # Chinese
-    OKX = "OKX"
+    OKX = "OKEX"
     CFFEX = "CFFEX"         # China Financial Futures Exchange
     SHFE = "SHFE"           # Shanghai Futures Exchange
     CZCE = "CZCE"           # Zhengzhou Commodity Exchange
